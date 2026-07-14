@@ -3,10 +3,16 @@ import { Link } from "react-router-dom";
 // TODO2: กำหนด Type สำหรับ user
 
 const UsersList = () => {
-  const users = [
+
+  interface User {
+    id: number;
+    name: string;
+  }
+
+  const users: User[] = [
     { id: 1, name: "Alice" },
     { id: 2, name: "Bob" },
-    { id: 3, name: "Charlie" },
+    { id: 3, name: "Charlie" },  
   ];
 
   return (
